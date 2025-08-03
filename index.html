@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CATC - Common ASEAN Tourism Curriculum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "catc-blue": "#00357b",
+              "catc-yellow": "#fbbf24",
+              "modern-yellow": "#f59e0b",
+              "light-yellow": "#fef3c7",
+            },
+            fontFamily: {
+              lora: ["Lora", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lora", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white font-poppins text-sm">
+    <!-- Hero Section -->
+    <section
+      class="pt-0 pb-32 bg-gradient-to-br from-catc-blue via-blue-700 to-blue-800 text-white relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div
+        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-20"
+      ></div>
+
+      <!-- Navigation -->
+      <nav id="navbar" class="relative z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center py-3">
+            <div class="flex items-center">
+              <div>
+                <h1 class="text-lg font-semibold text-white font-poppins">
+                  CATC
+                </h1>
+                <span class="text-xs text-gray-200"
+                  >Common ASEAN Tourism Curriculum</span
+                >
+              </div>
+            </div>
+            <div class="hidden md:flex space-x-6">
+              <a
+                href="schools.html"
+                class="text-white hover:text-gray-200 transition-colors font-medium text-sm"
+                >Schools</a
+              >
+              <a
+                href="curriculum.html"
+                class="text-white hover:text-gray-200 transition-colors font-medium text-sm"
+                >Curriculum</a
+              >
+            </div>
+            <div class="md:hidden">
+              <button id="mobile-menu-btn" class="text-white">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <a
+              href="schools.html"
+              class="block py-2 text-white hover:text-gray-200 text-sm"
+              >Schools</a
+            >
+            <a
+              href="curriculum.html"
+              class="block py-2 text-white hover:text-gray-200 text-sm"
+              >Curriculum</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <div class="relative max-w-7xl mx-auto px-4 pt-32">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left side - Text content -->
+          <div class="text-left">
+            <h1
+              class="text-4xl md:text-6xl font-bold mb-6 leading-tight font-lora text-white"
+            >
+              Common ASEAN<br />
+              <span class="text-white">Tourism Curriculum</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-white leading-relaxed">
+              Regional standards framework untuk harmonisasi pendidikan dan
+              pelatihan pariwisata di seluruh negara anggota ASEAN
+            </p>
+          </div>
+
+          <!-- Right side - Rotating images -->
+          <div
+            class="relative h-96 lg:h-[400px] lg:w-96 overflow-hidden lg:ml-32"
+          >
+            <div id="hero-images" class="w-full h-full">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is CATC Section -->
+    <section id="what-is-catc" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-catc-blue mb-4 font-lora"
+          >
+            What is CATC?
+          </h2>
+          <div class="w-24 h-1 bg-modern-yellow mx-auto rounded-full"></div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <p class="text-base text-gray-700 leading-relaxed mb-6">
+              The Common ASEAN Tourism Curriculum (CATC) is a regional standards
+              framework designed to harmonize tourism education and training
+              across ASEAN member states. It serves as the foundation for the
+              ASEAN Mutual Recognition Agreement on Tourism Professionals
+              (MRA-TP), which facilitates the mobility of qualified tourism
+              professionals across ASEAN countries.
+            </p>
+            <p class="text-base text-gray-700 leading-relaxed">
+              The CATC was developed to address the varying levels of tourism
+              education and workforce skills in the region, ensuring consistent,
+              high-quality standards for tourism-related jobs. The CATC is
+              designed to support tourism professionals by providing a
+              structured, competency-based approach to education, training, and
+              certification.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-gray-200">
+            <h3 class="text-xl font-bold text-catc-blue mb-4 font-poppins">
+              Key Features
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 bg-modern-yellow rounded-full flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <svg
+                    class="w-3 h-3 text-catc-blue"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-700"
+                  >Regional standards framework</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 bg-modern-yellow rounded-full flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <svg
+                    class="w-3 h-3 text-catc-blue"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-700"
+                  >Competency-based approach</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 bg-modern-yellow rounded-full flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <svg
+                    class="w-3 h-3 text-catc-blue"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-700"
+                  >ASEAN-wide recognition</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 bg-modern-yellow rounded-full flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <svg
+                    class="w-3 h-3 text-catc-blue"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-700">Professional mobility</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-catc-blue mb-4 font-lora"
+          >
+            Objectives
+          </h2>
+          <div class="w-24 h-1 bg-modern-yellow mx-auto rounded-full"></div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-blue-100 p-6 rounded-2xl text-black">
+            <div
+              class="w-12 h-12 bg-catc-blue/20 rounded-xl flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-catc-blue"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-poppins text-black">
+              Harmonization
+            </h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Menyeragamkan standar pendidikan dan pelatihan pariwisata di
+              seluruh negara anggota ASEAN
+            </p>
+          </div>
+          <div class="bg-blue-100 p-6 rounded-2xl text-black">
+            <div
+              class="w-12 h-12 bg-catc-blue/20 rounded-xl flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-catc-blue"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-poppins text-black">
+              Professional Development
+            </h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Mengembangkan kompetensi profesional pariwisata sesuai standar
+              regional
+            </p>
+          </div>
+          <div class="bg-blue-100 p-6 rounded-2xl text-black">
+            <div
+              class="w-12 h-12 bg-catc-blue/20 rounded-xl flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-6 h-6 text-catc-blue"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 font-poppins text-black">
+              Regional Integration
+            </h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Mendorong integrasi regional dalam sektor pariwisata melalui
+              standar yang seragam
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section id="partners" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-catc-blue mb-4 font-lora"
+          >
+            Our partners
+          </h2>
+          <div class="w-24 h-1 bg-modern-yellow mx-auto rounded-full"></div>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          <!-- ASEAN Logo -->
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 md:w-24 md:h-24 mb-3">
+              <img
+                src="assets/images/CATC-asean.png"
+                alt="ASEAN Logo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Indonesian Ministry of Education and Culture Logo -->
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 md:w-24 md:h-24 mb-3">
+              <img
+                src="assets/images/CATC-kemdikbud.png"
+                alt="Indonesian Ministry of Education and Culture Logo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- SEAMEO Logo -->
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 md:w-24 md:h-24 mb-3">
+              <img
+                src="assets/images/CATC-seameo.png"
+                alt="SEAMEO Logo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- SEAMOLEC Logo -->
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 md:w-24 md:h-24 mb-3">
+              <img
+                src="assets/images/CATC-seamolec.png"
+                alt="SEAMOLEC Logo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div class="w-56 h-24 mb-3">
+              <img
+                src="assets/images/CATC-gema.png"
+                alt="Gema Logo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 md:w-24 md:h-24 mb-3">
+              <img
+                src="assets/images/CATC-seaqis.png"
+                alt="Seaqis Logo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div class="w-24 h-24 md:w-24 md:h-24 mb-3">
+              <img
+                src="assets/images/CATC-pens.png"
+                alt="Pens Logo"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schools Section -->
+    <section id="schools" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-catc-blue mb-4 font-lora"
+          >
+            Schools
+          </h2>
+          <div class="w-24 h-1 bg-modern-yellow mx-auto rounded-full"></div>
+          <p class="text-base text-gray-700 mt-4 max-w-2xl mx-auto">
+            Sekolah-sekolah yang telah mengimplementasikan kurikulum CATC dalam
+            program pendidikan pariwisata mereka
+          </p>
+        </div>
+        <div
+          id="schools-grid"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border border-gray-400 rounded-lg overflow-hidden"
+        >
+          <!-- Schools will be loaded here by JavaScript -->
+        </div>
+        <div class="text-center mt-8">
+          <a
+            href="schools.html"
+            class="inline-block px-6 py-3 border border-gray-500 rounded-lg font-poppins font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200"
+          >
+            Show More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-catc-blue mb-4 font-lora"
+          >
+            Curriculum
+          </h2>
+          <div class="w-24 h-1 bg-modern-yellow mx-auto rounded-full"></div>
+          <p class="text-base text-gray-700 mt-4 max-w-2xl mx-auto">
+            Dokumentasi lengkap kurikulum CATC dan modul-modul yang tersedia
+            untuk implementasi
+          </p>
+        </div>
+        <div
+          id="documentation-grid"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Documentation will be loaded here by JavaScript -->
+        </div>
+        <div class="text-center mt-8">
+          <a
+            href="curriculum.html"
+            class="inline-block px-6 py-3 border border-gray-500 rounded-lg font-poppins font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200"
+          >
+            Show More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="schools-data.js"></script>
+    <script src="curriculum-data.js"></script>
+    <script src="script.js"></script>
+    <script src="footer-loader.js"></script>
+  </body>
+</html>

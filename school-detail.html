@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Sekolah - CATC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "catc-blue": "#00357b",
+              "catc-yellow": "#fbbf24",
+              "modern-yellow": "#f59e0b",
+              "light-yellow": "#fef3c7",
+            },
+            fontFamily: {
+              lora: ["Lora", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lora", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white font-poppins text-sm">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-3">
+          <div class="flex items-center">
+            <div>
+              <h1 class="text-lg font-semibold text-catc-blue font-poppins">
+                CATC
+              </h1>
+              <span class="text-xs text-gray-500"
+                >Common ASEAN Tourism Curriculum</span
+              >
+            </div>
+          </div>
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-catc-blue transition-colors font-medium text-sm"
+              >Home</a
+            >
+            <a
+              href="schools.html"
+              class="text-gray-700 hover:text-catc-blue transition-colors font-medium text-sm"
+              >Schools</a
+            >
+            <a
+              href="curriculum.html"
+              class="text-gray-700 hover:text-catc-blue transition-colors font-medium text-sm"
+              >Curriculum</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- School Detail Content -->
+    <div class="pt-20 pb-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- School Header -->
+        <div class="mb-10">
+          <div class="flex items-center mb-4">
+            <div
+              class="w-16 h-16 bg-white border border-gray-200 rounded-xl flex items-center justify-center mr-4"
+            >
+              <img
+                id="school-logo"
+                src="assets/images/smkn1pacet.png"
+                alt="School Logo"
+                class="w-10 h-10 object-contain"
+              />
+            </div>
+            <div>
+              <h1
+                id="school-name"
+                class="text-2xl md:text-3xl font-bold mb-2 font-lora text-black"
+              >
+                SMK Negeri 1 Denpasar
+              </h1>
+              <p id="school-location" class="text-lg text-gray-600">
+                Denpasar, Bali
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- School Information -->
+        <div class="grid lg:grid-cols-3 gap-6 mb-10">
+          <!-- About Section -->
+          <div class="lg:col-span-2">
+            <div class="bg-white rounded-2xl border border-gray-400 p-6">
+              <h2
+                class="text-xl font-semibold text-catc-blue mb-4 font-poppins"
+              >
+                Tentang Sekolah
+              </h2>
+              <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 leading-relaxed mb-4 text-sm">
+                  <span id="school-about"
+                    >SMK Negeri 1 Denpasar adalah salah satu sekolah menengah
+                    kejuruan terkemuka di Bali yang telah mengimplementasikan
+                    kurikulum CATC (Common ASEAN Tourism Curriculum) dalam
+                    program pendidikan pariwisata mereka. Sekolah ini
+                    berkomitmen untuk menghasilkan lulusan yang siap kerja
+                    sesuai standar ASEAN.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info -->
+          <div class="space-y-6">
+            <div class="bg-white rounded-2xl border border-gray-400 p-6">
+              <h3
+                class="text-lg font-semibold text-catc-blue mb-4 font-poppins"
+              >
+                Informasi Sekolah
+              </h3>
+              <div class="space-y-3">
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-light-yellow rounded-lg flex items-center justify-center mr-3"
+                  >
+                    <svg
+                      class="w-3 h-3 text-catc-blue"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-700" id="school-address"
+                    >Jl. Raya Puputan No. 1, Denpasar</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-light-yellow rounded-lg flex items-center justify-center mr-3"
+                  >
+                    <svg
+                      class="w-3 h-3 text-catc-blue"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                      ></path>
+                      <path
+                        d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-700" id="school-email"
+                    >info@smkn1denpasar.sch.id</span
+                  >
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-light-yellow rounded-lg flex items-center justify-center mr-3"
+                  >
+                    <svg
+                      class="w-3 h-3 text-catc-blue"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-700" id="school-phone"
+                    >(0361) 224-123</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATC Modules -->
+        <div class="bg-white rounded-2xl border border-gray-400 p-6">
+          <h2 class="text-xl font-semibold text-catc-blue mb-6 font-poppins">
+            Modul CATC yang Diimplementasikan
+          </h2>
+          <div
+            id="modules-grid"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Modules will be loaded here by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="schools-data.js"></script>
+    <script src="school-detail.js"></script>
+    <script src="footer-loader.js"></script>
+  </body>
+</html>

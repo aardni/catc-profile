@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schools - CATC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "catc-blue": "#00357b",
+              "catc-yellow": "#fbbf24",
+              "modern-yellow": "#f59e0b",
+              "light-yellow": "#fef3c7",
+            },
+            fontFamily: {
+              lora: ["Lora", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lora", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white font-poppins text-sm">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-3">
+          <div class="flex items-center">
+            <div>
+              <h1 class="text-lg font-semibold text-catc-blue font-poppins">
+                CATC
+              </h1>
+              <span class="text-xs text-gray-500"
+                >Common ASEAN Tourism Curriculum</span
+              >
+            </div>
+          </div>
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="index.html"
+              class="text-gray-700 hover:text-catc-blue transition-colors font-medium text-sm"
+              >Home</a
+            >
+            <a href="schools.html" class="text-catc-blue font-medium text-sm"
+              >Schools</a
+            >
+            <a
+              href="curriculum.html"
+              class="text-gray-700 hover:text-catc-blue transition-colors font-medium text-sm"
+              >Curriculum</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Schools Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-catc-blue mb-4 font-lora"
+          >
+            Schools
+          </h2>
+          <div class="w-24 h-1 bg-modern-yellow mx-auto rounded-full"></div>
+          <p class="text-base text-gray-700 mt-4 max-w-2xl mx-auto">
+            Sekolah-sekolah yang telah mengimplementasikan kurikulum CATC dalam
+            program pendidikan pariwisata mereka
+          </p>
+        </div>
+        <div
+          id="schools-grid"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border border-gray-400 rounded-lg overflow-hidden"
+        >
+          <!-- Schools will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <script src="schools-data.js"></script>
+    <script src="schools-script.js"></script>
+    <script src="footer-loader.js"></script>
+  </body>
+</html>
